@@ -6,6 +6,12 @@ services:
     startCommand: node server.js
     envVars:
       - key: MONGODB_URI
-        value: mongodb+srv://caritoprocha:MYPJKrMM9R9che1e@cluster0.iybxy.mongodb.net/r-solutions-db?retryWrites=true&w=majority&appName=Cluster0
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: EDITOR_INVITE_CODE
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 8h
       - key: PORT
         value: 5002
